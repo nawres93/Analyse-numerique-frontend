@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:
+    radial-gradient(circle at top left, color-mix(in oklab, var(--brand) 10%, transparent), transparent 30%),
+    radial-gradient(circle at bottom right, color-mix(in oklab, var(--navy) 8%, transparent), transparent 28%),
+    var(--background);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--brand) 20%, transparent);
+  color: var(--foreground);
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body, button, input, textarea, select {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+code {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
